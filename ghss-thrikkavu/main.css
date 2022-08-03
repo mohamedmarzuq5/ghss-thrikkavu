@@ -12280,23 +12280,38 @@ button.site-nav__link {
   -webkit-animation: e 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
   animation: e 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
-.continuous-3 {
-  background: linear-gradient(
-      90deg,
-      currentColor calc(100% / 3),
-      transparent 0 calc(200% / 3),
-      currentColor 0
-    )
-    var(--d, 0) 100% /300% 2px no-repeat !important;
-  transition: 0.5s !important;
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0079C6;
+  text-decoration: none !important;
 }
 
-.text-\[\#5363BB\] {
-    --tw-text-opacity: 1;
-    color: rgba(83,99,187,var(--tw-text-opacity));
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #CCAA40;
+  opacity: 0.7;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
-*, :after, :before {
-    --tw-border-opacity: 1;
-    border-color: rgba(229,231,235,var(--tw-border-opacity));
+.d-b {
+  text-indent: -9999px;                 /* sends the text off-screen */
+  height: 0px;                        /* be sure to set height & width */
+  width: 0px;
+  white-space: nowrap; 
+  outline: none;
 }
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
