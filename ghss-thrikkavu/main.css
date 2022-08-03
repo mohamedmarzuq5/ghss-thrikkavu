@@ -791,16 +791,16 @@ object {
   max-width: 100%;
   height: auto;
 }
-::-moz-selection {
+/* ::-moz-selection {
   background: #000;
   color: #fff;
   text-shadow: none;
 }
 ::selection {
-  background: #000;
-  color: #fff;
+  background: #cc9d0fcf;
+  color: #0079C6;
   text-shadow: none;
-}
+} */
 .secondary-palette ::-moz-selection {
   background: #fff;
   color: #000;
@@ -12284,7 +12284,7 @@ button.site-nav__link {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #0079C6;
+  color: #CCAA40;
   text-decoration: none !important;
 }
 
@@ -12296,7 +12296,7 @@ button.site-nav__link {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #CCAA40;
+  background-color: #0079C6;
   opacity: 0.7;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
@@ -12315,3 +12315,7 @@ button.site-nav__link {
   transform-origin: bottom left;
 }
 
+.spotlight-inner {
+  background-color: #CCAA40;
+  /* color: #0079C6 !important; */
+}
