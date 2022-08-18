@@ -772,6 +772,7 @@ body {
   background-color: RGBA(255, 255, 255, 1);
   background-color: RGBA(var(--primary-bg--alt), 1);
   -moz-font-feature-settings: "liga" on;
+  font-feature-settings: q;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10212,7 +10213,7 @@ body:not(.homepage) .site-footer--notice {
 }
 @media (min-width: 450px) {
   .spotlight__meta {
-    margin-top: 15px;
+    margin-top: -13px;
   }
 }
 @media (min-width: 720px) {
@@ -10223,12 +10224,12 @@ body:not(.homepage) .site-footer--notice {
 }
 @media (min-width: 770px) {
   .spotlight__meta {
-    margin-top: 5px;
+    margin-top: -13px;
   }
 }
 @media (min-width: 1350px) {
   .spotlight__meta {
-    margin-top: 5px;
+    margin-top: -13px;
     margin-left: 45px;
     margin-right: 45px;
   }
@@ -10239,7 +10240,7 @@ body:not(.homepage) .site-footer--notice {
     margin-right: 70px;
   }
   .archive.spotlight .spotlight__meta {
-    margin-top: 15px;
+    margin-top: -13px;
     margin-left: 45px;
     margin-right: 45px;
   }
@@ -12318,7 +12319,7 @@ button.site-nav__link {
 }
 
 .spotlight-inner {
-  background-color: #CCAA40;
+  background-color: #0079C6;
   /* color: #0079C6 !important; */
 }
 
@@ -12329,4 +12330,34 @@ button.site-nav__link {
 .iframe-d {
   margin-top: -50px;
   margin-left: -15px;
+}
+
+@media (max-width:1100px) {
+  .spotlight__img {
+    margin-top: -125px;
+  }
+}
+
+@media (max-width:720px) {
+  .spotlight__img {
+    margin-top: -115px;
+  }
+}
+
+
+@media (min-width:720px) {
+  .spotlight__text {
+    font-size: 20px;
+  }
+}
+
+.spotlight__text {
+  margin-top: 15px !important;
+}
+
+@media (min-width: 720px) and (max-width: 1349px) {
+  .spotlight__text {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
