@@ -12352,6 +12352,10 @@ button.site-nav__link {
   }
 }
 
+color.gallery-image:nth-child(4n + 1) {
+  color: #CCAA40;
+}
+
 .spotlight__text {
   margin-top: 15px !important;
 }
@@ -12368,7 +12372,7 @@ button.site-nav__link {
 }
 
 .site-nav__more-link:hover {
-  background-color: #0079C6 !important;
+  background-color: #007bc7 !important;
 }
 
 .site-nav__search-trigger-btn:hover {
