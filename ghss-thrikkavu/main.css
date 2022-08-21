@@ -8943,6 +8943,7 @@ body:not(.homepage) .site-footer--notice {
 .site-nav__search-trigger {
   color: RGBA(0, 50, 189, 1);
   color: RGBA(var(--primary-spot), 1);
+  background-color: #0079C6;
 }
 .site-nav__search-trigger {
   height: 60px;
@@ -12360,4 +12361,16 @@ button.site-nav__link {
     margin-left: 50px;
     margin-right: 50px;
   }
+}
+
+.site-nav__search-trigger-btn {
+  background-color: #fff;
+}
+
+.site-nav__more-link:hover {
+  background-color: #0079C6 !important;
+}
+
+.site-nav__search-trigger-btn:hover {
+  background-color: #fff !important;
 }
