@@ -8941,8 +8941,8 @@ body:not(.homepage) .site-footer--notice {
 .site-nav__more-link:focus,
 .site-nav__more-link:hover,
 .site-nav__search-trigger {
-  color: RGBA(0, 50, 189, 1);
-  color: RGBA(var(--primary-spot), 1);
+  /* color: RGBA(0, 50, 189, 1);
+  color: RGBA(var(--primary-spot), 1); */
   background-color: #0079C6;
 }
 .site-nav__search-trigger {
