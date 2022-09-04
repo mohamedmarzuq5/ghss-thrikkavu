@@ -1,133 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-Light.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Light.woff2) format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Light.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Light.woff) format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-LightItalic.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-LightItalic.woff2)
-      format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-LightItalic.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-LightItalic.woff) format("woff");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-Book.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Book.woff2) format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Book.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Book.woff) format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-BookItalic.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-BookItalic.woff2)
-      format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-BookItalic.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-BookItalic.woff) format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-Regular.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Regular.woff2) format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Regular.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Regular.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-RegularItalic.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-RegularItalic.woff2)
-      format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-RegularItalic.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-RegularItalic.woff)
-      format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-SemiBold.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-SemiBold.woff2) format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-SemiBold.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-SemiBold.woff) format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-SemiBoldItalic.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-SemiBoldItalic.woff2)
-      format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-SemiBoldItalic.svg)
-      format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-SemiBoldItalic.woff)
-      format("woff");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-Bold.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Bold.woff2) format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Bold.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Bold.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-BoldItalic.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-BoldItalic.woff2)
-      format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-BoldItalic.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-BoldItalic.woff) format("woff");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-Black.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Black.woff2) format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Black.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-Black.woff) format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: MessinaSans;
-  src: url(/themes/mit/assets/fonts/MessinaSansWeb-BlackItalic.eot?)
-      format("embedded-opentype"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-BlackItalic.woff2)
-      format("woff2"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-BlackItalic.svg) format("svg"),
-    url(/themes/mit/assets/fonts/MessinaSansWeb-BlackItalic.woff) format("woff");
-  font-weight: 900;
-  font-style: italic;
-}
 .theme--default,
 :root {
   --primary-spot: 0, 50, 189;
@@ -765,7 +636,7 @@ body {
   font-size: 16.0002px;
   font-weight: 400;
   line-height: 1.6;
-  font-family: MessinaSans, sans-serif;
+  font-family: 'Epilogue', sans-serif;
   margin: 0;
   color: RGBA(0, 0, 0, 1);
   color: RGBA(var(--primary-text), 1);
@@ -801,7 +672,7 @@ object {
   background: #cc9d0fcf;
   color: #0079C6;
   text-shadow: none;
-} */
+}
 .secondary-palette ::-moz-selection {
   background: #fff;
   color: #000;
@@ -809,7 +680,7 @@ object {
 .secondary-palette ::selection {
   background: #fff;
   color: #000;
-}
+} */
 a:link {
   -webkit-tap-highlight-color: RGBA(0, 63, 235, 1);
   -webkit-tap-highlight-color: RGBA(var(--secondary-spot), 1);
@@ -12361,6 +12232,6 @@ color.gallery-image:nth-child(4n + 1) {
 }
 
 .site-nav__more-link {
-  background-color: #007bc7 !important;
+  background-color: transparent !important;
 }
 
