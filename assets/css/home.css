@@ -4176,10 +4176,6 @@ button.hidden_in_nav {
   }
 }
 
-.icon-header:hover {
-    background-color: rgb(5, 100, 201) !important;
-}
-
 #underline_current {
   border-bottom: #0079C6 solid 2px;
   /* text-decoration: underline; */
@@ -4188,4 +4184,43 @@ button.hidden_in_nav {
   color: #CCAA40;
   text-decoration: none !important;
   padding-bottom: 4px;
+}
+
+.spotlight-newsletter-cta__text {
+  font-size: 16.0002px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: RGBA(255,255,255,1);
+  color: RGBA(var(--secondary-text),1);
+  margin-top: 7px;
+}
+
+.spotlight-newsletter-cta__text a {
+  text-decoration: none;
+  color: RGBA(255,255,255,1);
+  color: RGBA(var(--secondary-text),1);
+}
+
+a:link {
+  -webkit-tap-highlight-color: RGBA(0,63,235,1);
+  -webkit-tap-highlight-color: RGBA(var(--secondary-spot),1);
+  /* color: RGBA(0,63,235,1); */
+  color: RGBA(var(--secondary-spot),1);
+}
+
+.menu_button:hover {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+
+.arrow_svg {
+  color: #000;
+  font-weight: 10;
+  font-size: 2em !important;
+}
+
+.menu_button {
+  background-color: transparent !important;
+  color: black !important;
 }
