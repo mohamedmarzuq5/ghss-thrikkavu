@@ -4201,12 +4201,6 @@ button.hidden_in_nav {
   color: RGBA(var(--secondary-text),1);
 }
 
-a:link {
-  -webkit-tap-highlight-color: RGBA(0,63,235,1);
-  -webkit-tap-highlight-color: RGBA(var(--secondary-spot),1);
-  /* color: RGBA(0,63,235,1); */
-  color: RGBA(var(--secondary-spot),1);
-}
 
 .menu_button:hover {
   background-color: transparent !important;
