@@ -2486,3 +2486,7 @@ button.hidden_in_nav {
   background-color: transparent !important;
   color: black !important;
 }
+
+.tool-tip {
+  display: none !important;
+}
