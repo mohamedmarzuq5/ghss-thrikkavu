@@ -13,23 +13,51 @@
 	<meta property="og:title" content="ghss-thrikkavu" />
 	<meta property="og:url" content="ghss-thrikkavu.edu" />
 	<meta property="og:description" content="" />
-	<link rel="shortcut icon" type="image/png" href="assets/images/logo.png"/>
+	<link rel="shortcut icon" type="image/png" href="assets/images/logo.png" />
 
 	<title>GHSS THRIKKAVU - Home</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet" />
 
-	<!--[if gt IE 8]><!-->
 	<link rel="stylesheet" media="all" href="assets/css/home.css" />
-	<!--<![endif]-->
 
+	<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+	<style>
+		.swiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	</style>
 </head>
 
 <body class="main_body">
 	<nav class="site-nav js-site-nav">
 		<div class="nav_container">
-			<a class="logo-link" href="ghss-thrikkavu.html">
+			<a class="logo-link" href="index.html">
 				<img src="assets/images/tkv-header_logo.png" alt="" class="logo" />
 				<h1 class="visually-hidden">ghss-thrikkavu</h1>
 			</a>
@@ -47,9 +75,12 @@
 				<li class="nav-li menu-item--collapsed">
 					<a href="#" class="js-nav-item menu-item--collapsed hover-underline-animation font-size"
 						data-drupal-link-system-path="node/13">
-						Form<svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 36 24" fill="none">
-							<path d="M10.7578 23.75C10.2891 23.75 9.87891 23.5742 9.52734 23.2227C9.17578 22.8711 9 22.4609 9 21.9922V17.8027H10.7578V21.9922H25.9922V17.8027H27.75V21.9922C27.75 22.4609 27.5742 22.8711 27.2227 23.2227C26.8711 23.5742 26.4609 23.75 25.9922 23.75H10.7578ZM18.375 19.2676L12.7207 13.6133L13.9805 12.3535L17.4961 15.8691V5H19.2539V15.8691L22.7695 12.3535L24.0293 13.6133L18.375 19.2676Z" fill="#CCAA40"/>
-							</svg>
+						Form<svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 36 24"
+							fill="none">
+							<path
+								d="M10.7578 23.75C10.2891 23.75 9.87891 23.5742 9.52734 23.2227C9.17578 22.8711 9 22.4609 9 21.9922V17.8027H10.7578V21.9922H25.9922V17.8027H27.75V21.9922C27.75 22.4609 27.5742 22.8711 27.2227 23.2227C26.8711 23.5742 26.4609 23.75 25.9922 23.75H10.7578ZM18.375 19.2676L12.7207 13.6133L13.9805 12.3535L17.4961 15.8691V5H19.2539V15.8691L22.7695 12.3535L24.0293 13.6133L18.375 19.2676Z"
+								fill="#CCAA40" />
+						</svg>
 					</a>
 				</li>
 				<li class="nav-li">
@@ -71,10 +102,7 @@
 			</ul>
 
 			<div class="site-nav__buttons">
-
-
-				<a style="margin-right: -10px !important;" class="icon-header js-mobile-search icon-header-btn"
-					href="mailto: ghssthrikkavup@gmail.com">
+				<a style="margin-right: -10px !important" class="icon-header js-mobile-search icon-header-btn" href="">
 					<span class="visually-hidden">call</span>
 
 					<svg style="margin-bottom: 15px" width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -85,7 +113,7 @@
 					</svg>
 				</a>
 
-				<a class="icon-header js-mobile-search icon-header-btn" href="#">
+				<a class="icon-header js-mobile-search icon-header-btn" href="mailto: ghssthrikkavup@gmail.com">
 					<span class="visually-hidden">mail</span>
 					<svg style="margin-bottom: 15px" width="48" height="48" viewBox="0 0 48 48" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
@@ -96,19 +124,16 @@
 				</a>
 
 				<button class="menu_button js-mobile-nav-trigger">
-
-					<span style="margin-bottom: 15px !important;" class="js-mobile-nav-trigger-text">Menu ↓</span>
-					<a style=" text-decoration: none;" href="#">
-						<span style="font-size: 30px;" class="arrow_svg js-mobile-nav-trigger-arrow">
+					<span style="margin-bottom: 15px !important" class="js-mobile-nav-trigger-text">Menu ↓</span>
+					<a style="text-decoration: none" href="#">
+						<span style="font-size: 30px" class="arrow_svg js-mobile-nav-trigger-arrow">
 							<!-- <svg
 								xmlns="http://www.w3.org/2000/svg" height="40" width="40"
 								style="margin-bottom: -5px !important; ">
 								<path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
 							</svg> -->
-							
 						</span>
 					</a>
-
 				</button>
 			</div>
 		</div>
@@ -122,19 +147,32 @@
 			</iframe>
 		</div>
 
-		<div class="main_div main_div--home" id="main" tabindex="0" role="region">
-			<article class="spotlight">
-				<div class="spotlight-inner">
-					<video src="assets/images/photo_animation.mp4" loop="true" width="900px" autoplay muted
-						class="spotlight__img" alt="thrikkavu-img"></video>
+		<div class="main_div" id="main" tabindex="0" role="region">
+			<article class="site_main_div-semantic">
+				<div class="site_main_section">
+					<div
+						class="swiper-img swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-css-mode">
+						<div class="swiper-wrapper" id="swiper-wrapper-008810bdb10c738b35" aria-live="polite" 
+						style="margin-top: -15px;">
+							<div class="swiper-slide" role="group" aria-label="1 / 3">
+								<img src="assets/images/tkv_photo.jpg" alt="" />
+							</div>
+							<div class="swiper-slide" role="group" aria-label="2 / 3">
+								<img src="./assets/images/tkv_photo-2.jpg" alt="" />
+							</div>
+							<div class="swiper-slide" role="group" aria-label="3 / 3">
+								<img src="./assets/images/tkv_photo-3.jpg" alt="" />
+							</div>
+						</div>
+					</div>
 
 					<div class="about_tkv js-hang-punc">
-						<p style="padding-bottom: 10px;">
+						<p style="padding-bottom: 10px">
 							Government Higher Secondary School Thrikkavu is a government
 							school located in Thrikkavu area of Ponnani sub-district in
-							Tirur education district of Malappuram district. Commonly
-							known as Thrikkavu School, established in 1893, this school is
-							one of the oldest schools in Malappuram district.
+							Tirur education district of Malappuram district. Commonly known
+							as Thrikkavu School, established in 1893, this school is one of
+							the oldest schools in Malappuram district.
 						</p>
 					</div>
 				</div>
@@ -143,38 +181,57 @@
 			<div class="iframe-outer-div">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.68113879338!2d75.9312636!3d10.7790873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf0b33d8ad52b427!2sGovernment%20Higher%20Secondary%20School%20(GHSS)%20Thrikkavu!5e0!3m2!1sen!2sin!4v1662909879846!5m2!1sen!2sin"
-					height="300" id="__google-map" style="border: 0;" allowfullscreen="" loading="lazy"
+					height="300" id="__google-map" style="border: 0" allowfullscreen="" loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade">
 				</iframe>
 			</div>
 
-			<h4 class="spotlight-newsletter-cta__text"
-				style="font-weight: normal; padding-top: 20px; padding-bottom: 20px; padding-left: 20px;">
-				Made with 💖 by <a style="color: #ccaa40; text-decoration: underline;" class="" href="instagram.com/mohamedmarzuq5">Mohamed Marzuq</a>
+			<h4 class="my_ad" style="
+            font-weight: normal;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+          ">
+				Made with 💖 by
+				<a style="color: #f3ff51; text-decoration: underline" class=""
+					href="instagram.com/mohamedmarzuq5">Mohamed Marzuq</a>
 			</h4>
 		</div>
 	</main>
 
 	<footer class="footer_div">
-		<ul style="font-size: 1rem; display: flex; flex-direction: column; margin-block-start: 1em !important; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; padding-inline-start: 0px;"
-			class="footer_ul">
+		<ul style="
+          font-size: 1rem;
+          display: flex;
+          flex-direction: column;
+          margin-block-start: 1em !important;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding-inline-start: 0px;
+        " class="footer_ul">
 			<li class="footer-li">
 				<a class="footer_a js-nav-item" href="#">Home</a>
 			</li>
 			<li class="footer-li">
-				<a class="footer_a js-nav-item" id="item-9" href="pages/about-us.html">About us</a>
+				<a class="footer_a js-nav-item" id="item-9" href="pages/about-us.html">About Us</a>
 			</li>
 			<li class="footer-li">
-				<a class="footer_a js-nav-item" id="item-3" href="#">Application Form <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-					<path d="M1.40625 15C1.03125 15 0.703125 14.8594 0.421875 14.5781C0.140625 14.2969 0 13.9688 0 13.5938V10.2422H1.40625V13.5938H13.5938V10.2422H15V13.5938C15 13.9688 14.8594 14.2969 14.5781 14.5781C14.2969 14.8594 13.9688 15 13.5938 15H1.40625ZM7.5 11.4141L2.97656 6.89063L3.98438 5.88281L6.79688 8.69531V0H8.20312V8.69531L11.0156 5.88281L12.0234 6.89063L7.5 11.4141Z" fill="black"/>
+				<a class="footer_a js-nav-item" id="item-3" href="#">Application Form
+					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+						<path
+							d="M1.40625 15C1.03125 15 0.703125 14.8594 0.421875 14.5781C0.140625 14.2969 0 13.9688 0 13.5938V10.2422H1.40625V13.5938H13.5938V10.2422H15V13.5938C15 13.9688 14.8594 14.2969 14.5781 14.5781C14.2969 14.8594 13.9688 15 13.5938 15H1.40625ZM7.5 11.4141L2.97656 6.89063L3.98438 5.88281L6.79688 8.69531V0H8.20312V8.69531L11.0156 5.88281L12.0234 6.89063L7.5 11.4141Z"
+							fill="black" />
 					</svg></a>
 			</li>
 		</ul>
 
 		<div class="footer_copyright">
-			<p style="margin-bottom:5px;" class="copyright_text">Copyright &copy; G.H.S.S. Thrikkavu</p>
+			<p style="margin-bottom: 5px" class="copyright_text">
+				Copyright &copy; G.H.S.S. Thrikkavu
+			</p>
 			All Rights Reserved
-			<ul style="margin-top: 5px;" class="social_media-icons">
+			<ul style="margin-top: 5px" class="social_media-icons">
 				<li class="social_media-icon social_media-icon--facebook">
 					<a href="https://www.facebook.com/HhssPonnani/" target="_blank">
 						<svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
@@ -200,13 +257,11 @@
 									</mask>
 									<path
 										d="M7.629.005c-2.072 0-2.332.009-3.146.046-.812.037-1.366.166-1.851.354a3.74 3.74 0 0 0-1.352.88A3.74 3.74 0 0 0 .4 2.636c-.188.486-.317 1.04-.354 1.852C.009 5.302 0 5.562 0 7.633c0 2.072.009 2.332.046 3.146.037.812.166 1.366.355 1.851.194.502.455.928.88 1.352.424.424.849.685 1.35.88.486.188 1.04.317 1.852.354.814.037 1.074.046 3.146.046 2.071 0 2.331-.009 3.145-.046.812-.037 1.366-.166 1.852-.354a3.74 3.74 0 0 0 1.35-.88 3.74 3.74 0 0 0 .88-1.352c.19-.485.318-1.04.355-1.851.037-.814.046-1.074.046-3.146 0-2.071-.009-2.331-.046-3.145-.037-.812-.166-1.366-.354-1.852a3.74 3.74 0 0 0-.88-1.35 3.74 3.74 0 0 0-1.351-.88c-.486-.19-1.04-.318-1.852-.355C9.96.014 9.7.005 7.629.005zm0 1.374c2.037 0 2.278.008 3.082.045.744.034 1.148.158 1.417.262.356.139.61.304.877.571.267.267.432.521.57.877.105.27.23.673.263 1.417.037.804.045 1.046.045 3.082 0 2.037-.008 2.279-.045 3.083-.034.744-.158 1.148-.262 1.417-.139.356-.304.61-.571.877a2.363 2.363 0 0 1-.877.57c-.269.105-.673.23-1.417.263-.804.037-1.045.045-3.082.045s-2.279-.008-3.083-.045c-.744-.034-1.148-.158-1.417-.263a2.363 2.363 0 0 1-.877-.57 2.364 2.364 0 0 1-.57-.877c-.105-.27-.23-.673-.263-1.417-.037-.804-.044-1.046-.044-3.083 0-2.036.007-2.278.044-3.082.034-.744.158-1.148.263-1.417.138-.356.303-.61.57-.877.267-.267.521-.432.877-.57.27-.105.673-.23 1.417-.263.804-.037 1.046-.045 3.083-.045z"
-										fill="currentColor" mask="url(#b)">
-									</path>
+										fill="currentColor" mask="url(#b)"></path>
 								</g>
 								<path
 									d="M8.013 10.705a2.543 2.543 0 1 1 0-5.086 2.543 2.543 0 0 1 0 5.086zm0-6.46a3.917 3.917 0 1 0 0 7.835 3.917 3.917 0 0 0 0-7.835zM13 4.09a.915.915 0 1 1-1.83 0 .915.915 0 0 1 1.83 0"
-									fill="currentColor">
-								</path>
+									fill="currentColor"></path>
 							</g>
 						</svg>
 					</a>
@@ -216,6 +271,20 @@
 	</footer>
 
 	<script src="assets/js/home.js"></script>
+
+	<!-- Swiper JS -->
+	<script src="./assets/js/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			cssMode: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			loop: true,
+		});
+	</script>
 </body>
 
 </html>
