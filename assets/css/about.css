@@ -2490,3 +2490,7 @@ button.hidden_in_nav {
 .tool-tip {
   display: none !important;
 }
+
+a:link {
+  background-color: transparent !important;
+}

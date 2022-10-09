@@ -1499,29 +1499,6 @@ body:not(.main_body):not(.nav-is-open) .footer_div:before {
   background-color: RGBA(var(--primary-text), 1);
   color: #fff;
 }
-.skip-to-content {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  font-size: 16.0002px;
-  font-weight: 600;
-  line-height: 1.3;
-  -webkit-transform: translate3d(-50%, 0, 0);
-  transform: translate3d(-50%, 0, 0);
-  z-index: 10;
-  cursor: pointer;
-  margin: 0;
-  float: right;
-  padding: 8px 20px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  text-decoration: none;
-  text-align: center;
-  background: RGBA(0, 50, 189, 1);
-  background: RGBA(var(--primary-spot), 1);
-  color: RGBA(255, 255, 255, 1);
-  color: RGBA(var(--primary-bg), 1);
-}
 .nav-li--more {
   position: relative;
 }
@@ -2726,11 +2703,19 @@ button.hidden_in_nav {
     height: 300px;
     padding: 0;
   }
+
+  main {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 1100px) {
   #__google-map {
     display: none;
+  }
+
+  #google-map {
+    width: 460px;
   }
 
   .footer_ul {
