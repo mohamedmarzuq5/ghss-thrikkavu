@@ -2715,7 +2715,7 @@ button.hidden_in_nav {
 
 @media (max-width: 1300px) and (min-width: 1100px) {
   * + * {
-    margin: 35px 0 0;
+    margin: 50px 0 0;
   }
 }
 
