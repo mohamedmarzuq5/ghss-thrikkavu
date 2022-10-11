@@ -15,6 +15,10 @@
   --spotl-addl-content--text: 0, 0, 0;
   --spotl-addl-content--link-text--hover: 0, 0, 0;
 }
+
+:root {
+    --swiper-theme-color: transparent !important;
+}
 *,
 :after,
 :before {
@@ -2709,13 +2713,21 @@ button.hidden_in_nav {
   }
 }
 
+@media (max-width: 1116px) and (min-width: 1100px) {
+  .my_ad {
+    padding-bottom: 0px !important;
+    position: absolute;
+    bottom: 40px;
+  }
+}
+
 @media (min-width: 1100px) {
   #__google-map {
     display: none;
   }
 
   #google-map {
-    width: 460px;
+    /* width: 460px; */
   }
 
   .footer_ul {
