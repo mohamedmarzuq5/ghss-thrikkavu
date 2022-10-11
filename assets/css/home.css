@@ -2713,11 +2713,11 @@ button.hidden_in_nav {
   }
 }
 
-@media (max-width: 1116px) and (min-width: 1100px) {
+@media (max-width: 1150px) and (min-width: 1100px) {
   .my_ad {
     padding-bottom: 0px !important;
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
   }
 }
 
@@ -2725,11 +2725,6 @@ button.hidden_in_nav {
   #__google-map {
     display: none;
   }
-
-  #google-map {
-    /* width: 460px; */
-  }
-
   .footer_ul {
     display: none !important;
   }
